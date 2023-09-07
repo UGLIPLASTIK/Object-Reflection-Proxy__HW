@@ -1,9 +1,27 @@
+/* eslint-disable dot-notation */
 /* eslint-disable no-unused-vars */
-import Character from './js/character';
-import Bowman from './js/class/bowman';
-import Undead from './js/class/undead';
+import showAttack from './js/attacks';
 
-const char = new Bowman('Biba');
-// char.damage(30);
-// char.levelup();
-console.log(char);
+const character = {
+  name: 'Лучник',
+  type: 'Bowman',
+  health: 50,
+  level: 3,
+  attack: 40,
+  defence: 10,
+  special: [
+    {
+      id: 8,
+      name: 'Двойной выстрел',
+      icon: 'http://...',
+      description: 'Двойной выстрел наносит двойной урон',
+    },
+    {
+      id: 9,
+      name: 'Нокаутирующий удар',
+      icon: 'http://...',
+    },
+  ],
+};
+
+console.log(showAttack(character));

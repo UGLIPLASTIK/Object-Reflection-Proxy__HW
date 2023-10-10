@@ -1,6 +1,7 @@
 /* eslint-disable dot-notation */
 /* eslint-disable no-unused-vars */
-import showAttack from './js/attacks';
+import showAttack from './js/destructuring';
+import sorting from './js/sorting';
 
 const character = {
   name: 'Лучник',
@@ -25,3 +26,11 @@ const character = {
 };
 
 console.log(showAttack(character));
+
+// const testChar = {
+//   name: 'мечник',
+//   health: 10,
+//   level: 2,
+//   attack: 80,
+//   defence: 40,
+// };

@@ -13,15 +13,15 @@ export default function sorting(obj, array) {
     delete copyObj[elem];
   });
 
-  const temp = [];
-  for (const key in copyObj) {
-    temp.push({ key, value: copyObj[key] });
-  }
+  // const temp = [];
+  // for (const key in copyObj) {
+  //   temp.push({ key, value: copyObj[key] });
+  // }
 
-  temp.sort((a, b) => {
-    if (a.key < b.key) return -1;
-    if (a.key > b.key) return 1;
-  });
+  // temp.sort((a, b) => {
+  //   if (a.key < b.key) return -1;
+  //   if (a.key > b.key) return 1;
+  // });
 
   const arrKeys = Object.keys(copyObj).sort();
   arrKeys.forEach((elem) => {
